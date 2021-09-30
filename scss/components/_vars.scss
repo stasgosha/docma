@@ -1,6 +1,7 @@
 // Fonts
 $main-font: 'Inter', Arial, sans-serif;
-$second-font: 'Poppins', $main-font;
+$second-font: $main-font;
+// $second-font: 'Poppins', $main-font;
 
 // Colors
 $blue: #3D6BF5;

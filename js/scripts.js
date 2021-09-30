@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			return false;
 		}
 
-		let topNavHeight = 79;
+		let topNavHeight = 66;
 
 		if ($(window).width() < 576) {
 			topNavHeight = 63;
