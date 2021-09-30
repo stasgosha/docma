@@ -70,11 +70,7 @@ picture, iframe, figure{
 		flex: auto;
 		position: relative;
 		z-index: 5;
-		// padding-top: 86px;
-
-		body:not(.home) &{
-			padding-top: 135px;
-		}
+		padding-top: 100px;
 	}
 
 	.footer{
@@ -100,7 +96,7 @@ picture, iframe, figure{
 	}
 
 	@media screen and (min-width: 1200px){
-		max-width: 1170px;
+		max-width: 1150px;
 	}
 }
 
