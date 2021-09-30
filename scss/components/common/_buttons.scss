@@ -1,0 +1,109 @@
+.btn{
+	--btn-bg: #{$primary};
+	--btn-hover-bg: #{darken($primary, 10%)};
+
+	text-align: center;
+	padding: 15px 35px 17px 30px;
+	min-height: 64px;
+
+	border: 2px solid var(--btn-bg);
+	border-radius: 32px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: all $t;
+	cursor: pointer;
+	appearance: none;
+	white-space: nowrap;
+
+	background: var(--btn-bg);
+	color: #fff;
+
+	position: relative;
+
+	font-family: $main-font;
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 500;
+
+	.btn-text{
+		position: relative;
+		z-index: 2;
+	}
+
+	.btn-icon{
+		width: 20px;
+		height: 20px;
+		font-size: 20px;
+		fill: currentcolor;
+		color: currentcolor;
+		flex: none;
+		display: block;
+		transform: translateY(1px);
+
+		&:first-child{
+			margin-right: 12px;
+		}
+
+		&:last-child{
+			margin-left: 12px;
+		}
+	}
+
+	&:hover,
+	&:focus{
+		outline: none;
+		background: var(--btn-hover-bg);
+		border-color: var(--btn-hover-bg);
+	}
+
+	&.btn-accent{
+		--btn-bg: #{ $accent };
+		--btn-hover-bg: #{ darken($accent, 10%) };
+		color: #373737;
+	}
+
+	&.btn-pink{
+		--btn-bg: #D65DB1;
+		--btn-hover-bg: #{ darken(#D65DB1, 10%) };
+		color: #fff;
+	}
+
+	&.btn-small{
+		padding: 9px 30px 11px 14px;
+		font-size: 17px;
+		line-height: 1.15;
+		min-height: 44px;
+		border-radius: 22px;
+		text-transform: none;
+
+		&.btn-no-icon{
+			padding-right: 14px;
+		}
+	}
+
+	&.btn-stroke{
+		background: transparent;
+		color: #505050;
+
+		.btn-icon{
+			fill: #373737;
+		}
+
+		&:hover,
+		&:focus{
+			color: #fff;
+			background: var(--btn-hover-bg);
+
+			.btn-icon{
+				fill: #fff;
+			}
+		}
+	}
+
+	&:active{
+		transform: translateY(2px);
+	}
+}

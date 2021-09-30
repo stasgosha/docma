@@ -1,0 +1,57 @@
+.form{
+	.input-field,
+	textarea,
+	.select-field select,
+	.select-field .jcf-select{
+		border: 1px solid #5B422C;
+		appearance: none;
+		background: transparent;
+		border-radius: 0;
+		flex: auto;
+		height: 3.1944vw;
+		font-size: 0.9722vw;
+		font-weight: 400;
+		color: #fff;
+		font-family: inherit;
+		padding: 0 1.1111vw;
+		outline: none !important;
+		transition: all $t;
+		width: 100%;
+		box-shadow: none;
+
+		&::placeholder{
+			opacity: 1;
+			color: #3E291B;
+		}
+
+		&:focus{
+			border-color: $primary;
+		}
+
+		&.error{
+			border-color: #DB5366;
+		}
+
+		@media screen and (max-width: 1199px){
+			height: 48px;
+			padding: 0 16px;
+			font-size: 14px;
+		}
+	}
+
+	textarea{
+		resize: none;
+		padding: 1.1111vw;
+		height: 10.0000vw;
+		display: block;
+
+		@media screen and (max-width: 1199px){
+			padding: 16px;
+			height: 144px;
+		}
+	}
+
+	.wpcf7-list-item{
+		margin: 0;
+	}
+}

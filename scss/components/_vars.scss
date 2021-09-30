@@ -1,0 +1,25 @@
+// Fonts
+$main-font: 'Inter', Arial, sans-serif;
+$second-font: 'Poppins', $main-font;
+
+// Colors
+$blue: #3D6BF5;
+
+$theme-dark: #1B1B1C;
+
+$gray: #64646C;
+$dark: #1F1D2B;
+$light: #7A7A7A;
+
+$text-color: $gray;
+$text-dark: $dark;
+$text-light: $light;
+
+$primary: $blue;
+$accent: $blue;
+
+// Params
+$body-bg: #F3F4F8; // site background
+$t: .3s; // animation duration
+$r: 0; // default border radius
+$shadow: unset; // default card shadow
