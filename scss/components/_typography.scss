@@ -10,7 +10,7 @@
 
 @mixin p-small{
 	font-size: 16px;
-	line-height: 1.625;
+	line-height: 2;
 }
 
 @mixin h1{
@@ -21,7 +21,7 @@
 
 @mixin h2{
 	font-size: 32px;
-	line-height: 1.875;
+	line-height: 1.625;
 	font-weight: 600;
 }
 
@@ -42,6 +42,29 @@
 	line-height: 1.666;
 	text-transform: uppercase;
 	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+@mixin default-ul{
+	display: grid;
+	grid-gap: 8px;
+
+	li{
+		padding-left: 16px;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: $primary;
+			position: absolute;
+			left: 0;
+			top: 0.65em;
+		}
+	}
 }
 
 body{
@@ -78,8 +101,8 @@ body{
 	}
 
 	p{
-		@include p-small;
-		margin-bottom: 1.625em;
+		@include p;
+		margin-bottom: 1.6em;
 
 		&:last-child{
 			margin-bottom: 0;
@@ -87,26 +110,71 @@ body{
 	}
 
 	ul{
-		margin-bottom: 1.625em;
+		@include default-ul;
+		margin-bottom: 1.6em;
 
 		&:last-child{
 			margin-bottom: 0;
 		}
 
-		li{
-			&:before{
-				content: '';
-				display: inline-block;
-				width: 4px;
-				height: 4px;
-				background: $primary;
-				border-radius: 50%;
-				margin-right: 6px;
-			}
-		}
 	}
 }
 
 .section-caption{
-	
+	margin-bottom: 32px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.sc-suptitle{
+		@include small-caption;
+		color: $primary;
+		margin-bottom: 16px;
+	}
+
+	.sc-title{
+		@include h2;
+		color: $text-dark;
+
+		&.bigger{
+			font-size: 40px;
+			line-height: 1.25;
+		}
+
+		&.big{
+			@include h1;
+			padding-top: 8px;
+		}
+	}
+
+	.sc-subtitle{
+		margin-top: 16px;
+		@include p;
+	}
+
+	&.white{
+		.sc-suptitle,
+		.sc-title{
+			color: #fff;
+		}
+	}
+
+	&.text-center{
+		text-align: center;
+	}
+}
+
+.text-link{
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: $primary;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+
+	&:hover,
+	&:focus{
+		color: darken($primary, 10%);
+	}
 }

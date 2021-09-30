@@ -53,32 +53,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		goToTab($(this).val());
 	});
 
-	// Read More btn
-	$('.read-more-btn').each(function(i, btn){
-		let isExpanded = false;
-
-		const target = $( $(btn).data('target') );
-		const btnText = $(btn).find('.btn-text');
-
-		const moreText = $(btn).data('more-text');
-		const lessText = $(btn).data('less-text');
-
-		$(btn).click(function(e){
-			e.preventDefault();
-
-			target.stop().slideToggle(300);
-			$(this).toggleClass('opened');
-
-			if (!isExpanded) {
-				btnText.text( lessText );
-				isExpanded = true;
-			} else{
-				btnText.text( moreText );
-				isExpanded = false;
-			}
-		});
-	});
-
 	// Sliders
 	function equalSlideHeight(slider){
 		$(slider).on('setPosition', function () {

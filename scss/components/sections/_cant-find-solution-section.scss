@@ -1,0 +1,45 @@
+.cant-find-solution-section{
+	padding: 52px 0;
+	background: #1F1D2B;
+	color: #fff;
+
+	&.light-bg{
+		background: $primary;
+	}
+
+	.section-inner{
+		display: flex;
+		align-items: flex-end;
+		width: calc(100% + 28px);
+		margin-right: -28px;
+	}
+
+	.section-content{
+		flex: auto;
+		max-width: 620px;
+		margin-right: 80px;
+
+		.sc-subtitle{
+			max-width: 485px;
+			margin-top: 16px;
+		}
+	}
+
+	.section-button{
+		flex: none;
+		margin-right: 80px;
+	}
+
+	.section-image{
+		width: 139px;
+		margin-left: auto;
+		margin-top: -21px;
+		margin-bottom: -32px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

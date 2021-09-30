@@ -8,6 +8,7 @@
 
 body{
 	position: relative;
+	background: $body-bg;
 
 	&.overflow{
 		overflow: hidden;

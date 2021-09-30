@@ -1,0 +1,56 @@
+.solutions-section{
+	
+}
+
+.solution-card{
+	padding: 160px 0;
+	border-bottom: 1px solid rgba(#A6A7A9, .4);
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	--gap: 130px;
+
+	.card-image{
+		width: 482px;
+		flex: none;
+		margin-right: var(--gap);
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 16px;
+		}
+	}
+
+	.card-content{
+		flex: auto;
+
+		.sc-subtitle{
+			max-width: 462px;
+		}
+	}
+
+	&:nth-child(even){
+		.card-image{
+			order: 2;
+			margin-right: 0;
+			margin-left: var(--gap);
+		}
+	}
+
+	.card-features{
+		margin-top: 24px;
+		@include default-ul;
+	}
+
+	.card-footer{
+		margin-top: 32px;
+
+		.btn{
+			max-width: 160px;
+			display: flex;
+		}
+	}
+}
