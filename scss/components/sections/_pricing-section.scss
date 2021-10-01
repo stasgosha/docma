@@ -4,6 +4,14 @@
 	.section-caption{
 		margin-bottom: 40px;
 	}
+
+	@media screen and (max-width: 1199px){
+		padding: 80px 0;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 64px 0;
+	}
 }
 
 .quantity-select-block{
@@ -20,12 +28,31 @@
 		margin-bottom: 16px;
 		text-align: center;
 	}
+
+	@media screen and (max-width: 991px){
+		margin-bottom: 64px;
+	}
+
+	@media screen and (max-width: 767px){
+		.block-caption{
+			line-height: 1.66;
+		}
+	}
 }
 
 .plans-grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
+
+	@media screen and (max-width: 991px){
+		grid-gap: 16px;
+	}
+
+	@media screen and (max-width: 767px){
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
+	}
 }
 
 .plan-card{
@@ -71,6 +98,7 @@
 
 	.card-content{
 		padding: 16px 0;
+		flex: auto;
 	}
 
 	.card-content-caption{
@@ -124,5 +152,22 @@
 				color: #fff;
 			}
 		}
+	}
+
+	@media screen and (max-width: 1199px){
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 32px 16px 24px;
+
+		.card-footer{
+			margin-top: 32px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding: 48px 32px 24px;
 	}
 }

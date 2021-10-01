@@ -51,4 +51,39 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 1199px){
+		.section-inner{
+			grid-gap: 30px;
+			grid-template-columns: 410px 1fr;
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		height: auto;
+		min-height: unset;
+		max-height: unset;
+
+		.section-inner{
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media screen and (max-width: 439px){
+		.section-buttons{
+			flex-direction: column;
+
+			.btn{
+				width: 100%;
+				margin-right: 0 !important;
+				margin-bottom: 16px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }

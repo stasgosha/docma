@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		let topNavHeight = 66;
 
-		if ($(window).width() < 576) {
-			topNavHeight = 63;
+		if ($(window).width() < 440) {
+			topNavHeight = 56;
 		}
 
 		$('html, body').animate({
@@ -99,9 +99,20 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('.menu-opener').click(function(e){
 		e.preventDefault();
 
+		const isOpened = $('body').hasClass('nav-opened');
+
 		$('.menu-opener').toggleClass('active');
 		$('.mobile-top-nav').toggleClass('opened');
 		$('.header').toggleClass('nav-opened');
+		$('body').toggleClass('nav-opened');
+
+		if (!isOpened) {
+			bodyScrolled = $(window).scrollTop();
+
+			$('body, .header').scrollTop(bodyScrolled).css('padding-right', getScrollWidth());
+		} else{
+			$('body, .header').scrollTop(bodyScrolled).css('padding-right', 0);
+		}
 	});
 
 	$('.mobile-top-nav').each(function(i, el){

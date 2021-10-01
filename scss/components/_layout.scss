@@ -14,7 +14,8 @@ body{
 		overflow: hidden;
 	}
 
-	&.modal-visible{
+	&.modal-visible,
+	&.nav-opened{
 		overflow: hidden;
 		height: 100vh;
 	}
@@ -72,6 +73,10 @@ picture, iframe, figure{
 		position: relative;
 		z-index: 5;
 		padding-top: 100px;
+
+		@media screen and (max-width: 439px){
+			padding-top: 70px;
+		}
 	}
 
 	.footer{
@@ -93,7 +98,7 @@ picture, iframe, figure{
 	}
 
 	@media screen and (min-width: 992px){
-		max-width: 900px;
+		max-width: 960px;
 	}
 
 	@media screen and (min-width: 1200px){

@@ -33,7 +33,7 @@
 
 .sub-xs-visible, .sub-xs-visible-flex{ display: none !important; }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 439px){
 	.sub-xs-hidden{ display: none !important; }
 	.sub-xs-visible{ display: block !important; }
 	.sub-xs-visible-flex{ display: flex !important; }

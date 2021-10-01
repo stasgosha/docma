@@ -21,7 +21,6 @@
 
 		.sc-subtitle{
 			max-width: 485px;
-			margin-top: 16px;
 		}
 	}
 
@@ -35,11 +34,59 @@
 		margin-left: auto;
 		margin-top: -21px;
 		margin-bottom: -32px;
+		flex: none;
 
 		img{
 			display: block;
 			max-width: 100%;
 			height: auto;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.section-inner{
+			width: 100%;
+			margin-right: 0;
+		}
+
+		.section-content{
+			max-width: 485px;
+		}
+
+		.section-content,
+		.section-button{
+			margin-right: 40px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.section-inner{
+			flex-wrap: wrap;
+		}
+
+		.section-image{
+			margin-top: 0;
+		}
+
+		.section-content{
+			margin-right: 0;
+			width: 100%;
+			max-width: unset;
+			margin-bottom: 32px;
+
+			.sc-subtitle{
+				max-width: unset;
+			}
+		}
+	}
+
+	@media screen and (max-width: 374px){
+		.section-button{
+			margin-right: 24px;
+		}
+
+		.section-image{
+			width: 90px;
 		}
 	}
 }
