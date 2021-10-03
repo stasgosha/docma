@@ -24,6 +24,54 @@ $(function () {
 
 document.addEventListener('DOMContentLoaded', function(){
 
+	// Accordions
+	const toggleAccordion = (el) => {
+		let closeText = 'Close accordion';
+		let openText = 'Open accordtion';
+
+		let btn = $(el).find('> .ac-header > .ac-opener');
+
+		$(el).find('> .ac-content').stop().slideToggle(300);
+		$(el).toggleClass('opened');
+
+		if ( $(el).find('.slick-slider').length > 0 ) {
+			$(el).find('.slick-slider').slick('setPosition');
+		}
+
+		if ( btn.attr('aria-expanded') == 'false' ) {
+			btn.attr({
+				'aria-expanded': 'true',
+				'aria-label': closeText
+			});
+		} else{
+			btn.attr({
+				'aria-expanded': 'false',
+				'aria-label': openText
+			});
+		}
+	}
+
+	$('.accordion, .js-accordion').each(function(i, el){
+		$(el).find('> .ac-header, > .ac-header > .ac-opener').click(function(e){
+			e.preventDefault();
+			e.stopPropagation();
+
+			toggleAccordion( $(el) );
+		});
+
+		if ($(el).hasClass('opened-on-load')) {
+			$(el).find('.ac-header').trigger('click');
+		}
+	});
+
+	// Catalog view type
+	$('[data-change-view]').click(function(e){
+		e.preventDefault();
+
+		$('#js-catalog-grid').attr('data-view', $(this).data('change-view'));
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+
 	// Tabs
 	function goToTab(tabId, handler){
 		if (handler == undefined) {
