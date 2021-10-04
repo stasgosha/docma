@@ -170,36 +170,7 @@
 	display: grid;
 	grid-gap: 32px 24px;
 
-	@media screen and (min-width: 576px){
-		.row-visible,
-		.grid-visible{
-			display: none;
-		}
-
-		&[data-view="grid"]{
-			grid-template-columns: repeat(3, 1fr);
-
-			.grid-visible{
-				display: block;
-			}
-
-			@media screen and (max-width: 1199px){
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-
-		&[data-view="rows"]{
-			.row-visible{
-				display: block;
-			}
-		}
-	}
-
-	@media screen and (max-width: 575px){
-		.row-visible{
-			display: none;
-		}
-	}
+	@include product-card-visibility;
 }
 
 .product-card{

@@ -1,0 +1,212 @@
+.product-section{
+	padding: 64px 0 50px;
+
+	.product-info-tabs{
+		margin-top: 88px;
+		padding-bottom: 32px;
+		border-bottom: 1px solid rgba(#A6A7A9, .4);
+	}
+
+	@media screen and (max-width: 1199px){
+		.product-info-tabs{
+			margin-top: 50px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+
+.big-product-card{
+	display: grid;
+	grid-template-columns: 506px 1fr;
+	grid-gap: 70px;
+
+	.card-image{
+		img{
+			width: 100%;
+			display: block;
+			height: auto;
+			border-radius: 16px;
+		}
+	}
+
+	.card-content{
+		padding-top: 19px;
+	}
+
+	.section-caption{
+		margin-bottom: 27px;
+	}
+
+	.card-price{
+		font-size: 32px;
+		line-height: 1.5;
+		font-weight: 600;
+		color: $text-dark;
+		margin-bottom: 37px;
+		display: flex;
+		align-items: baseline;
+
+		.old{
+			margin-right: 16px;
+			display: inline-block;
+			color: $text-color;
+			opacity: .24;
+			font-size: 20px;
+		}
+	}
+
+	.card-sku{
+		font-size: 16px;
+		line-height: 2;
+		font-weight: 500;
+		color: $text-dark;
+		margin-bottom: 38px;
+		display: flex;
+		align-items: baseline;
+
+		small{
+			font-size: inherit;
+			color: rgba($text-color, .4);
+			display: inline-block;
+			margin-right: 8px;
+		}
+	}
+
+	.card-footer{
+		display: flex;
+
+		.count-select-block{
+			margin-right: 24px;
+		}
+
+		.btn{
+			margin-right: 16px;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		grid-template-columns: 420px 1fr;
+		grid-gap: 40px;
+	}
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 320px 1fr;
+		grid-gap: 24px;
+	}
+
+	@media screen and (max-width: 767px){
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
+
+		.card-content{
+			padding-top: 0;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.card-footer{
+			flex-wrap: wrap;
+
+			.count-select-block{
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 24px;
+			}
+
+			.btn{
+				flex: auto;
+			}
+		}
+	}
+}
+
+.count-select-block{
+	width: 110px;
+	border-radius: 8px;
+	border: 1px solid $primary;
+	display: flex;
+	align-items: center;
+	min-height: 67px;
+
+	.block-btn{
+		width: 26px;
+		height: 100%;
+		flex: none;
+		display: flex;
+		align-items: center;
+		color: $primary;
+
+		&:first-child{
+			justify-content: flex-end;
+		}
+
+		&:last-child{
+			justify-content: flex-start;
+		}
+
+		svg{
+			width: 8px;
+			height: 14px;
+			fill: none;
+			stroke: currentcolor;
+			display: block;
+		}
+
+		&:hover,
+		&:focus{
+			color: $text-dark;
+		}
+	}
+
+	input{
+		width: 100%;
+		flex: auto;
+		height: 40px;
+		color: $primary;
+		font-family: inherit;
+		font-size: 24px;
+		text-align: center;
+		font-weight: 500;
+		padding: 0;
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		appearance: none;
+	}
+}
+
+.add-to-wishlist-btn{
+	width: 67px;
+	height: 67px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.btn-icon{
+		stroke: $dark;
+		fill: none;
+		transition: all $t;
+		display: block;
+		width: 32px;
+		height: 32px;
+	}
+
+	&:hover,
+	&:focus{
+		.btn-icon{
+			stroke: $primary;
+		}
+	}
+
+	&.active{
+		.btn-icon{
+			stroke: $primary;
+			fill: $primary;
+		}
+	}
+}

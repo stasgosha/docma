@@ -1,0 +1,48 @@
+.addons-section{
+	padding: 50px 0 130px;
+
+	.section-caption{
+		margin-bottom: 67px;
+	}
+
+	@media screen and (max-width: 1199px){
+		padding-bottom: 80px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding-top: 32px;
+	}
+
+	@media screen and (max-width: 575px){
+		padding-bottom: 64px;
+	}
+}
+
+.addons-slider-wrapper{
+	@include product-card-visibility;
+
+	.slider-nav{
+		margin-top: 48px;
+	}
+}
+
+.addons-slider{
+	width: calc(100% + 12px * 2);
+	margin-left: -12px;
+	margin-right: -12px;
+
+	.slick-slide{
+		padding: 0 12px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
+
+		> div:not(.product-card){
+			display: flex;
+
+			.slide{
+				display: flex !important;
+			}
+		}
+	}
+}

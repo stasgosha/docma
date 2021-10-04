@@ -1,53 +1,35 @@
 .tabs-nav{
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 24px 0 calc(24px - 16px);
+	border-bottom: 1px solid rgba(#A6A7A9, .4);
+	margin-bottom: 32px;
 
 	.tab-btn{
-		font-size: 24px;
+		font-size: 16px;
 		line-height: 1.5;
-		font-weight: 200;
+		font-weight: 600;
 		color: $text-dark;
 		text-align: left;
-		margin-bottom: 24px;
+		margin-right: 48px;
+		margin-bottom: 16px;
 
-		&:last-child{
-			margin-bottom: 0;
+		@media screen and (max-width: 575px){
+			margin-right: 24px;
 		}
 
-		&:hover{
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus{
 			color: $primary;
 		}
 
 		&.current{
-			font-weight: 500;
-		}
-	}
-
-	@media screen and (max-width: 991px){
-		.tab-btn{
-			font-size: 18px;
-		}
-	}
-
-	@media screen and (max-width: 575px){
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		width: calc(100% + 16px);
-		margin-right: -16px;
-		margin-bottom: -16px;
-
-		.tab-btn{
-			margin-right: 16px;
-			margin-bottom: 16px !important;
-			border-bottom: 1px solid transparent;
-
-			&.current{
-				font-weight: 200;
-				color: $primary;
-				border-bottom: 1px solid $primary;
-			}
+			color: $primary;
 		}
 	}
 }

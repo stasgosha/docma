@@ -10,4 +10,10 @@
 
 	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="grid-view"><rect x="5.33" y="5.33" width="9.33" height="9.33" rx="1.5"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.33 6.83c0-.83.67-1.5 1.5-1.5h6.34c.82 0 1.5.67 1.5 1.5v6.34c0 .83-.68 1.5-1.5 1.5h-6.34a1.5 1.5 0 0 1-1.5-1.5V6.83Zm-12 12c0-.83.67-1.5 1.5-1.5h6.34c.82 0 1.5.67 1.5 1.5v6.34c0 .83-.68 1.5-1.5 1.5H6.83a1.5 1.5 0 0 1-1.5-1.5v-6.34Zm13.5-1.5c-.83 0-1.5.67-1.5 1.5v6.34c0 .83.67 1.5 1.5 1.5h6.34c.82 0 1.5-.67 1.5-1.5v-6.34c0-.83-.68-1.5-1.5-1.5h-6.34Z"/></symbol>
 
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" id="heart"><path d="M27.84 4.12A7.38 7.38 0 0 0 22.63 2a7.48 7.48 0 0 0-5.21 2.12L16 5.52l-1.42-1.4a7.44 7.44 0 0 0-10.42 0 7.18 7.18 0 0 0 0 10.24l1.42 1.4L16 26l10.42-10.24 1.42-1.4A7.23 7.23 0 0 0 30 9.24a7.13 7.13 0 0 0-2.16-5.12v0Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" id="arrow-left"><path d="m7 13.5-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" id="arrow-right"><path d="m1 13.5 6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
 </svg>
