@@ -1,9 +1,9 @@
 @mixin p{
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.6;
 
 	@media screen and (max-width: 575px){
-		font-size: 17px;
+		font-size: 14px;
 	}
 }
 
@@ -13,56 +13,52 @@
 }
 
 @mixin p-small{
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 2;
 }
 
 @mixin h1{
-	font-size: 56px;
+	font-size: 44px;
 	line-height: 1.07;
 	font-weight: 600;
 
 	@media screen and (max-width: 1199px){
-		font-size: 48px;
+		font-size: 42px;
 	}
 
 	@media screen and (max-width: 575px){
-		font-size: 38px;
+		font-size: 32px;
 	}
 }
 
 @mixin h2{
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 1.625;
 	font-weight: 600;
 
 	@media screen and (max-width: 575px){
-		font-size: 28px;
+		font-size: 24px;
 	}
 }
 
 @mixin h3{
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 1.3;
 	font-weight: 600;
 }
 
 @mixin h4{
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.25;
 }
 
 @mixin small-caption{
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.666;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 0.05em;
-
-	@media screen and (max-width: 575px){
-		font-size: 14px;
-	}
 }
 
 @mixin default-ul{
@@ -104,7 +100,7 @@ body{
 	}
 
 	h3, h4{
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 1.5;
 		color: #3a3a3a;
 		font-weight: 500;
@@ -159,7 +155,7 @@ body{
 
 		@media screen and (min-width: 576px){
 			&.bigger{
-				font-size: 40px;
+				font-size: 36px;
 				line-height: 1.25;
 			}
 		}
