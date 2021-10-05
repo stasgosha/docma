@@ -14,8 +14,7 @@
 	}
 
 	@media screen and (max-width: 991px){
-		padding-top: 32px;
-		padding-bottom: 32px;
+		padding: 32px 0;
 	}
 }
 
@@ -176,6 +175,24 @@
 		border: 0;
 		box-shadow: none;
 		appearance: none;
+	}
+
+	&.small{
+		min-height: 48px;
+		width: 77px;
+
+		.block-btn{
+			width: 19px;
+
+			svg{
+				width: 6px;
+				height: 11px;
+			}
+		}
+
+		input{
+			font-size: 20px;
+		}
 	}
 }
 

@@ -16,4 +16,6 @@
 
 	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" id="arrow-right"><path d="m1 13.5 6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="close"><path d="M12.31 1 6.66 6.66m0 0L1 12.3m5.66-5.65 5.65 5.65M6.66 6.66 1 1" fill="none" stroke-width="2" stroke-linecap="round"/></symbol>
+
 </svg>
