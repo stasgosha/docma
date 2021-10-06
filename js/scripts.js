@@ -99,6 +99,11 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	});
 
+	// Forms
+	$('.form .select-field select').change(function(){
+		$(this).addClass('selected'); // .find('.hideme').remove();
+	});
+
 	// Catalog view type
 	$('[data-change-view]').click(function(e){
 		e.preventDefault();
