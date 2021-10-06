@@ -161,6 +161,19 @@
 			margin-top: 48px;
 		}
 	}
+
+	.form-note{
+		margin-top: 32px;
+		font-size: 14px;
+		line-height: 1.215;
+		color: $text-dark;
+	}
+
+	.form-agreements{
+		margin-top: 32px;
+		display: grid;
+		grid-gap: 16px;
+	}
 }
 
 .account-form{
@@ -175,8 +188,24 @@
 				grid-template-columns: repeat(3, 1fr);
 			}
 
+			&.columns-6{
+				grid-template-columns: repeat(6, 1fr);
+
+				.form-field{
+					grid-column: span 2;
+
+					&.medium{
+						grid-column: span 3;
+					}
+
+					&.big{
+						grid-column: span 4;
+					}
+				}
+			}
+
 			.wide{
-				grid-column: 1 / -1;
+				grid-column: 1 / -1 !important;
 			}
 		}
 	}
@@ -205,6 +234,16 @@
 			word-wrap: break-word;
 			color: $text-dark;
 
+			a{
+				color: $primary;
+				font-weight: 600;
+
+				&:hover,
+				&:focus{
+					text-decoration: underline;
+				}
+			}
+
 			&:before{
 				content: '';
 				display: block;
@@ -232,7 +271,7 @@
 			}
 
 			&:hover{
-				color: $primary;
+				color: $text-color;
 			}
 		}
 
@@ -247,5 +286,27 @@
 				}
 			}
 		}
+	}
+}
+
+.promo-code-field{
+	width: 100%;
+	position: relative;
+
+	.input-field{
+		input{
+			padding-right: 155px;
+		}
+	}
+
+	.btn{
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 5;
+	}
+
+	@media screen and (min-width: 576px){
+		max-width: 497px;
 	}
 }

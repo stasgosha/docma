@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Account | Docmation</title>
+	<title>Payment | Docmation</title>
 
 	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/slick-theme.min.css">
@@ -107,78 +107,76 @@
 
 					<div class="section-header">
 						<div class="section-caption">
-							<h1 class="sc-title">Account</h1>
+							<h1 class="sc-title">Payment</h1>
 						</div>
 					</div>
 
 					<div class="section-inner">
 						<div class="section-main">
 							<ul class="steps-nav">
-								<li class="current"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
+								<li><a href="#">1</a></li>
+								<li class="current"><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 							</ul>
 
 							<div class="account-form form">
 								<form action="">
-									<h3 class="form-caption">Contact Details</h3>
+									<h3 class="form-caption">Promo Code</h3>
 
 									<div class="form-fields">
-										<div class="form-field">
-											<div class="input-field">
-												<input type="text" placeholder="First Name">
-											</div>
-										</div>
-
-										<div class="form-field">
-											<div class="input-field">
-												<input type="text" placeholder="Last Name">
-											</div>
-										</div>
-
-										<div class="form-field">
-											<div class="input-field">
-												<input type="email" placeholder="Email">
-											</div>
-										</div>
-
-										<div class="form-field">
-											<div class="input-field">
-												<input type="tel" placeholder="Main Company Number">
-											</div>
-										</div>
-
-										<div class="form-field">
-											<div class="input-field">
-												<input type="text" placeholder="Company Name">
-											</div>
-										</div>
-
-										<div class="form-field">
-											<div class="select-field">
-												<select>
-													<option class="hideme" disabled selected>Global Company Size</option>
-													<option value="Small">Small</option>
-													<option value="Medium">Medium</option>
-													<option value="Large">Large</option>
-												</select>
+										<div class="form-field wide">
+											<div class="promo-code-field">
+												<div class="input-field">
+													<input type="text" placeholder="Enter promo code">
+												</div>
+												<button class="btn">Apply</button>
 											</div>
 										</div>
 									</div>
 
-									<h3 class="form-caption">Service address</h3>
+									<h3 class="form-caption">Payment Information</h3>
 
-									<div class="form-fields columns-3">
+									<div class="form-fields columns-6">
+										<div class="form-field wide">
+											<div class="input-field">
+												<input type="text" placeholder="Cardholder Name">
+											</div>
+										</div>
+
+										<div class="form-field wide">
+											<div class="input-field">
+												<input type="text" placeholder="Card Name">
+											</div>
+										</div>
+
+										<div class="form-field medium">
+											<div class="input-field">
+												<input type="tel" placeholder="Expiration Date">
+											</div>
+										</div>
+
+										<div class="form-field medium">
+											<div class="input-field">
+												<input type="tel" placeholder="CVV">
+											</div>
+										</div>
+
 										<div class="form-field wide">
 											<div class="input-field">
 												<input type="text" placeholder="Address Line 1">
 											</div>
 										</div>
 
-										<div class="form-field wide">
+										<div class="form-field big">
 											<div class="input-field">
 												<input type="text" placeholder="Address Line 2">
+											</div>
+										</div>
+
+										<div class="form-field">
+											<div class="input-field">
+												<input type="text" placeholder="Country">
 											</div>
 										</div>
 
@@ -204,19 +202,29 @@
 										</div>
 									</div>
 
-									<h3 class="form-caption">Company Address</h3>
+									<div class="form-note">
+										<p>By providing a valid credit/debit card, you are authorizing Vonage to automatically charge your card for all one-time and recurring charges (pre-payments or payments in arrears), including applicable Taxes and Fees, for all Vonage Services and equipment purchases (and any other applicable chargeable amounts) until notified by you to revoke authorization.</p>
+									</div>
 
-									<div class="form-fields">
-										<div class="form-field wide">
-											<label class="checkbox">
-												<input type="checkbox" class="visually-hidden" checked>
-												<span class="fake-label">Same as Service Address</span>
-											</label>
-										</div>
+									<div class="form-agreements">
+										<label class="checkbox">
+											<input type="checkbox" class="visually-hidden" checked>
+											<span class="fake-label">I have read and accept the <a href="#">Terms of Service</a>.</span>
+										</label>
+
+										<label class="checkbox">
+											<input type="checkbox" class="visually-hidden" checked>
+											<span class="fake-label">I have read and accept the <a href="#">Emergency Services Policy</a> and <a href="#">Acknowledgement</a>.</span>
+										</label>
+
+										<label class="checkbox">
+											<input type="checkbox" class="visually-hidden" checked>
+											<span class="fake-label">I understand that I am committing to a one year term. If I cancel before the Service Term commitment ends, I will be charged any applicable early termination fees as outlined in the <a href="#">Terms of Service</a>.</span>
+										</label>
 									</div>
 
 									<div class="form-footer md-hidden">
-										<button class="btn">Continue to Payment</button>
+										<button class="btn">Review your Order</button>
 									</div>
 								</form>
 							</div>
@@ -274,7 +282,7 @@
 									</li>
 									<li>
 										<div class="item-name">Taxes</div>
-										<div class="item-price">Will be calculated</div>
+										<div class="item-price">$12.99</div>
 									</li>
 								</ul>
 
@@ -302,7 +310,7 @@
 							</div>
 
 							<div class="sidebar-footer md-visible-flex">
-								<button class="btn btn-fullwidth">Continue to Payment</button>
+								<button class="btn btn-fullwidth">Review your Order</button>
 							</div>
 						</aside>
 					</div>
