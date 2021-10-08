@@ -221,6 +221,7 @@
 	display: block;
 	margin: 0 !important;
 	padding: 7px 0;
+	border-radius: 4px;
 
 	input{
 		~ .fake-label{
@@ -272,6 +273,15 @@
 
 			&:hover{
 				color: $text-color;
+			}
+		}
+
+		&:focus-visible{
+			~ .fake-label{
+				&:before{
+					outline: 2px solid #000;
+					outline-offset: 3px;
+				}
 			}
 		}
 
