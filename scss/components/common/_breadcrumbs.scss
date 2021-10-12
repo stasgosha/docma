@@ -1,11 +1,11 @@
 .breadcrumbs{
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 17px;
+	font-size: 14px;
 	line-height: 1.6;
 	font-weight: 500;
-	color: $text-dark;
-	margin-bottom: 48px;
+	color: var(--text-dark);
+	margin-bottom: 24px;
 
 	li{
 		margin-right: 16px;
@@ -24,7 +24,7 @@
 
 			&:hover,
 			&:focus{
-				color: $primary;
+				color: var(--primary);
 			}
 		}
 

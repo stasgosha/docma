@@ -1,15 +1,15 @@
 .cant-find-solution-section{
-	padding: 52px 0;
-	background: #1F1D2B;
+	padding: 40px 0;
+	background: var(--dark);
 	color: #fff;
 
 	&.light-bg{
-		background: $primary;
+		background: var(--primary);
 	}
 
 	.section-inner{
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		width: calc(100% + 28px);
 		margin-right: -28px;
 	}
@@ -20,7 +20,7 @@
 		margin-right: 80px;
 
 		.sc-subtitle{
-			max-width: 485px;
+			max-width: 500px;
 		}
 	}
 

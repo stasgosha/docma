@@ -1,6 +1,6 @@
 .btn{
-	--btn-bg: #{$primary};
-	--btn-hover-bg: #{darken($primary, 10%)};
+	--btn-bg: var(--primary);
+	--btn-hover-bg: var(--primary-darken);
 	--btn-color: #fff;
 
 	text-align: center;
@@ -8,13 +8,13 @@
 	min-height: 67px;
 
 	border: 1px solid var(--btn-bg);
-	border-radius: $r;
+	border-radius: var(--r);
 
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 
-	transition: all $t;
+	transition: all var(--t);
 	cursor: pointer;
 	appearance: none;
 	white-space: nowrap;
@@ -24,8 +24,8 @@
 
 	position: relative;
 
-	font-family: $second-font;
-	font-size: 16px;
+	font-family: var(--second-font);
+	font-size: 14px;
 	line-height: 1.5;
 	font-weight: 600;
 
@@ -62,8 +62,8 @@
 
 	&.btn-white{
 		--btn-bg: #fff;
-		--btn-hover-bg: #{ rgba(#fff, .7) };
-		--btn-color: #{ $primary };
+		--btn-hover-bg: rgba(255, 255, 255, .7);
+		--btn-color: var(--primary);
 
 		&:hover,
 		&:focus{
@@ -74,8 +74,8 @@
 
 	&.btn-stroke{
 		--btn-bg: transparent;
-		--btn-color: #{ $primary };
-		--btn-hover-bg: #{ $primary };
+		--btn-color: var(--primary);
+		--btn-hover-bg: var(--primary);
 		border-color: var(--btn-color);
 
 		&:hover,
@@ -90,21 +90,22 @@
 
 			&:hover,
 			&:focus{
-				--btn-color: #{ $primary };
+				--btn-color: var(--primary);
 			}
 		}
 	}
 
 	&.btn-transparent{
 		--btn-bg: transparent;
-		--btn-color: #{ $primary };
+		--btn-color: var(--primary);
 		--btn-hover-bg: transparent;
 		padding-left: 24px;
 		padding-right: 24px;
+		font-family: var(--main-font);
 
 		&:hover,
 		&:focus{
-			--btn-color: #{ lighten($primary, 10%) };
+			--btn-color: var(--primary-lighten);
 		}
 	}
 

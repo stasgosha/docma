@@ -26,7 +26,7 @@
 		transform: translateY(-100%);
 		opacity: 0;
 		visibility: hidden;
-		transition: all $t;
+		transition: all var(--t);
 		transition-delay: .2s;
 	}
 
@@ -87,7 +87,7 @@
 
 	.modal-content{
 		background: #fff;
-		border-radius: $r;
+		border-radius: var(--r);
 		position: relative;
 		padding: 60px 100px;
 	}
@@ -132,7 +132,7 @@
 	height: 44px;
 	// border-radius: 50%;
 	opacity: 1;
-	transition: all $t;
+	transition: all var(--t);
 	appearance: none;
 	background: transparent;
 	border: 0;
@@ -148,7 +148,7 @@
 		position: absolute;
 		left: calc(50% - 20px / 2);
 		top: calc(50% - 2px / 2);
-		transition: all $t;
+		transition: all var(--t);
 		border-radius: 1px;
 	}
 
@@ -163,7 +163,7 @@
 	&:hover{
 		&:before,
 		&:after{
-			background: $primary;
+			background: var(--primary);
 		}
 	}
 
@@ -180,7 +180,7 @@
 		&:hover{
 			&:before,
 			&:after{
-				background: $primary;
+				background: var(--primary);
 			}
 		}
 

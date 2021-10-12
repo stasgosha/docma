@@ -1,5 +1,5 @@
 .footer{
-	background: #fff;
+	background: var(--footer-bg);
 
 	.footer-inner{
 		display: flex;
@@ -16,10 +16,10 @@
 
 	.footer-row{
 		&.first{
-			padding: 60px 0 0;
+			padding: 32px 0 0;
 
 			.container{
-				padding-bottom: 60px;
+				padding-bottom: 32px;
 				position: relative;
 
 				&:after{
@@ -36,12 +36,6 @@
 			}
 
 			@media screen and (max-width: 767px){
-				padding: 32px 0 0;
-
-				.container{
-					padding-bottom: 32px;
-				}
-
 				.footer-inner{
 					flex-direction: column;
 
@@ -57,7 +51,7 @@
 		}
 
 		&.second{
-			padding: 64px 0 40px;
+			padding: 32px 0;
 
 			.footer-inner{
 				align-items: center;
@@ -103,10 +97,10 @@
 	grid-gap: 68px;
 
 	.column-caption{
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 1.5;
 		margin-bottom: 16px;
-		color: $text-dark;
+		color: var(--text-dark);
 		font-weight: 600;
 
 		a{
@@ -114,7 +108,7 @@
 
 			&:hover,
 			&:focus{
-				color: $primary;
+				color: var(--primary);
 			}
 		}
 	}
@@ -122,23 +116,23 @@
 	ul{
 		display: grid;
 		grid-gap: 5px;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 1.5;
 
 		li{
 			a{
-				color: #64646C;
+				color: var(--text-color);
 
 				&:hover,
 				&:focus{
-					color: $primary;
+					color: var(--primary);
 				}
 			}
 
 			&.current-menu-item,
 			&.current-menu-parent{
 				a{
-					color: $primary;
+					color: var(--primary);
 				}
 			}
 			
@@ -197,7 +191,7 @@
 
 			&:hover,
 			&:focus{
-				background: $primary;
+				background: var(--primary);
 			}
 		}
 	}

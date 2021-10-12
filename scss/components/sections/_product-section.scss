@@ -1,20 +1,10 @@
 .product-section{
-	padding: 64px 0 50px;
+	padding: 24px 0 32px;
 
 	.product-info-tabs{
-		margin-top: 88px;
-		padding-bottom: 32px;
-		border-bottom: 1px solid rgba(#A6A7A9, .4);
-	}
-
-	@media screen and (max-width: 1199px){
-		.product-info-tabs{
-			margin-top: 50px;
-		}
-	}
-
-	@media screen and (max-width: 991px){
-		padding: 32px 0;
+		margin-top: 32px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid var(--border-color-rgb);
 	}
 }
 
@@ -22,6 +12,7 @@
 	display: grid;
 	grid-template-columns: 506px 1fr;
 	grid-gap: 70px;
+	align-items: center;
 
 	.card-image{
 		img{
@@ -33,7 +24,7 @@
 	}
 
 	.card-content{
-		padding-top: 19px;
+		// padding-top: 19px;
 	}
 
 	.section-caption{
@@ -41,10 +32,10 @@
 	}
 
 	.card-price{
-		font-size: 28px;
+		font-size: 20px;
 		line-height: 1.5;
 		font-weight: 600;
-		color: $text-dark;
+		color: var(--text-dark);
 		margin-bottom: 37px;
 		display: flex;
 		align-items: baseline;
@@ -52,24 +43,24 @@
 		.old{
 			margin-right: 16px;
 			display: inline-block;
-			color: $text-color;
+			color: var(--text-color);
 			opacity: .24;
-			font-size: 17px;
+			font-size: 14px;
 		}
 	}
 
 	.card-sku{
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 2;
 		font-weight: 500;
-		color: $text-dark;
+		color: var(--text-dark);
 		margin-bottom: 38px;
 		display: flex;
 		align-items: baseline;
 
 		small{
 			font-size: inherit;
-			color: rgba($text-color, .4);
+			color: rgba(var(--text-color-rgb), .4);
 			display: inline-block;
 			margin-right: 8px;
 		}
@@ -126,7 +117,7 @@
 .count-select-block{
 	width: 110px;
 	border-radius: 8px;
-	border: 1px solid $primary;
+	border: 1px solid var(--primary);
 	display: flex;
 	align-items: center;
 	min-height: 67px;
@@ -137,7 +128,7 @@
 		flex: none;
 		display: flex;
 		align-items: center;
-		color: $primary;
+		color: var(--primary);
 
 		&:first-child{
 			justify-content: flex-end;
@@ -157,7 +148,7 @@
 
 		&:hover,
 		&:focus{
-			color: $text-dark;
+			color: var(--text-dark);
 		}
 	}
 
@@ -165,9 +156,9 @@
 		width: 100%;
 		flex: auto;
 		height: 40px;
-		color: $primary;
+		color: var(--primary);
 		font-family: inherit;
-		font-size: 24px;
+		font-size: 22px;
 		text-align: center;
 		font-weight: 500;
 		padding: 0;
@@ -191,7 +182,7 @@
 		}
 
 		input{
-			font-size: 20px;
+			font-size: 14px;
 		}
 	}
 }
@@ -205,9 +196,9 @@
 	justify-content: center;
 
 	.btn-icon{
-		stroke: $dark;
+		stroke: var(--dark);
 		fill: none;
-		transition: all $t;
+		transition: all var(--t);
 		display: block;
 		width: 32px;
 		height: 32px;
@@ -216,14 +207,14 @@
 	&:hover,
 	&:focus{
 		.btn-icon{
-			stroke: $primary;
+			stroke: var(--primary);
 		}
 	}
 
 	&.active{
 		.btn-icon{
-			stroke: $primary;
-			fill: $primary;
+			stroke: var(--primary);
+			fill: var(--primary);
 		}
 	}
 }

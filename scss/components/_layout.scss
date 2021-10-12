@@ -8,7 +8,7 @@
 
 body{
 	position: relative;
-	background: $body-bg;
+	background: var(--body-bg);
 
 	&.overflow{
 		overflow: hidden;
@@ -42,7 +42,7 @@ button{
 
 a, button{
 	text-decoration: none;
-	transition: all $t;
+	transition: all var(--t);
 	// outline: none !important;
 	border: none;
 }

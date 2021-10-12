@@ -1,20 +1,8 @@
 .addons-section{
-	padding: 50px 0 130px;
+	padding: 32px 0 64px;
 
 	.section-caption{
-		margin-bottom: 67px;
-	}
-
-	@media screen and (max-width: 1199px){
-		padding-bottom: 80px;
-	}
-
-	@media screen and (max-width: 991px){
-		padding-top: 32px;
-	}
-
-	@media screen and (max-width: 575px){
-		padding-bottom: 64px;
+		margin-bottom: 32px;
 	}
 }
 
@@ -33,12 +21,10 @@
 
 	.slick-slide{
 		padding: 0 12px;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 32px;
 
 		> div:not(.product-card){
 			display: flex;
+			padding: 16px 0;
 
 			.slide{
 				display: flex !important;

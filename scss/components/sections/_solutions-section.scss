@@ -4,13 +4,13 @@
 
 .solution-card{
 	padding: var(--paddings) 0;
-	border-bottom: 1px solid rgba(#A6A7A9, .4);
+	border-bottom: 1px solid var(--border-color-rgb);
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 
-	--gap: 130px;
-	--paddings: 160px;
+	--gap: 80px;
+	--paddings: 60px;
 
 	.card-image{
 		width: 482px;

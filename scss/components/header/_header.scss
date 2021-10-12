@@ -4,17 +4,16 @@
 	top: 0;
 	width: 100%;
 	z-index: 100;
-	transition: padding-top $t,
-				padding-bottom $t,
-				background $t,
-				box-shadow $t;
+	transition: padding-top var(--t),
+				padding-bottom var(--t),
+				background var(--t),
+				box-shadow var(--t);
 
 	padding: 25px 0;
-	background: #fff;
+	background: var(--header-bg);
 
 	&.sticky{
 		padding: 8px 0;
-		background: #fff;
 		box-shadow: 0 0 2px rgba(#000, .2);
 	}
 
@@ -49,7 +48,7 @@
 		display: block;
 		height: 50px;
 		width: auto;
-		transition: all $t;
+		transition: all var(--t);
 	}
 
 	.sticky &{
@@ -78,21 +77,21 @@
 
 			a{
 				position: relative;
-				font-size: 16px;
+				font-size: 14px;
 				line-height: 1.5;
-				color: $text-dark;
+				color: var(--text-dark);
 				font-weight: 500;
 
 				&:hover,
 				&:focus{
-					color: $primary;
+					color: var(--primary);
 				}
 			}
 
 			&.current-menu-item,
 			&.current-menu-parent{
 				> a{
-					color: $primary;
+					color: var(--primary);
 				}
 			}
 			
@@ -114,7 +113,7 @@
 					flex: none;
 					margin-left: 13px;
 					background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M9 1 5 5 1 1' stroke='%231F1D2B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center center / contain;
-					transition: all $t;
+					transition: all var(--t);
 				}
 			}
 
@@ -135,7 +134,7 @@
 
 		.sub-menu{
 			padding: 12px 16px;
-			border-radius: $r;
+			border-radius: var(--r);
 			background: #fff;
 			position: absolute;
 			left: 0;
@@ -144,7 +143,7 @@
 			opacity: 0;
 			visibility: hidden;
 			pointer-events: none;
-			transition: all $t;
+			transition: all var(--t);
 			min-width: 160px;
 			box-shadow: 0 0 2px rgba(#000, .2);
 
@@ -184,7 +183,7 @@
 	left: 0;
 	top: 100%;
 	height: calc(100vh - 100px);
-	transition: all $t;
+	transition: all var(--t);
 	z-index: 100;
 	background: #fff;
 	width: 100%;
@@ -220,7 +219,7 @@
 		ul{
 			display: grid;
 			grid-gap: 16px;
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: 500;
 			margin-bottom: 32px;
 
@@ -236,7 +235,7 @@
 				&.current-menu-item,
 				&.current-menu-parent{
 					> a{
-						color: $primary;
+						color: var(--primary);
 					}
 				}
 				
@@ -261,7 +260,7 @@
 							background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 33'%3E%3Ccircle cx='16' cy='16.5' r='16' transform='rotate(-180 16 16.5)' fill='%233D6BF5'/%3E%3Cpath d='M19.95 15.42l-5.3-5.3a.96.96 0 00-.74-.31c-.3 0-.54.1-.74.3l-.62.62a1.07 1.07 0 000 1.48l3.96 3.95-3.95 3.95a1.07 1.07 0 000 1.48l.62.61c.2.2.44.3.74.3a1 1 0 00.73-.3l5.31-5.3c.2-.21.3-.46.3-.75s-.1-.53-.3-.73z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center / contain;
 							flex: none;
 							margin-left: 32px;
-							transition: all $t;
+							transition: all var(--t);
 						}
 
 						&.opened{

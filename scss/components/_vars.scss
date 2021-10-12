@@ -1,26 +1,80 @@
-// Fonts
-$main-font: 'Inter', Arial, sans-serif;
-$second-font: $main-font;
-// $second-font: 'Poppins', $main-font;
+:root{
+	// Fonts
+	--main-font:  'Inter', Arial, sans-serif;
+	--second-font: 'Inter', Arial, sans-serif;
 
-// Colors
-$blue: #3D6BF5;
+	// Colors
+	--gray: #64646C;
+	--dark: #1F1D2B;
+	--light: #7A7A7A;
 
-$theme-dark: #1B1B1C;
+	--blue: #3D6BF5;
+	--blue-darken: #1751FF;
+	--blue-lighten: #6288FB;
 
-$gray: #64646C;
-$dark: #1F1D2B;
-$light: #7A7A7A;
+	// Params
+	--body-bg: #F3F4F8; // site background
+	--footer-bg: #fff;
+	--header-bg: #fff;
+	--t: .3s; // animation duration
+	--r: 8px; // default border radius
 
-$text-color: $gray;
-$text-dark: $dark;
-$text-light: $light;
+	--text-color: #64646C;
+	--text-color-rgb: 110, 117, 124;
+	--text-dark: #1F1D2B;
+	--text-light: #7A7A7A;
 
-$primary: $blue;
-$accent: $blue;
+	--border-color-rgb: rgba(166, 167, 169, .4);
 
-// Params
-$body-bg: #F3F4F8; // site background
-$t: .3s; // animation duration
-$r: 8px; // default border radius
-$shadow: unset; // default card shadow
+	--primary: var(--blue);
+	--primary-darken: var(--blue-darken);
+	--primary-lighten: var(--blue-lighten);
+
+	--accent: var(--blue);
+	--accent-darken: var(--blue-darken);
+	--accent-lighten: var(--blue-lighten);
+}
+
+.theme-2{
+	// Fonts
+	--main-font: 'Lato', Arial, sans-serif;
+	--second-font: 'Montserrat', Arial, sans-serif;
+
+	--text-color: #8A94A6;
+	--text-color-rgb: 110, 117, 124;
+	--text-dark: #323B4B;
+
+	--dark: #1F242E;
+
+	--blue: #377DFF;
+	--blue-darken: #1751FF;
+	--blue-lighten: #6288FB;
+
+	--border-color-rgb: rgba(210, 214, 229, .4);
+
+	--body-bg: #fff;
+	--footer-bg: #FEFEFF;
+	--header-bg: #FEFEFF;
+}
+
+.theme-3{
+	// Fonts
+	--main-font: 'Museo Sans', Arial, sans-serif;
+	--second-font: 'Museo Slab', Arial, sans-serif;
+
+	--text-color: #36435D;
+	--text-color-rgb: 54, 67, 93;
+	--text-dark: #05173D;
+
+	--dark: #05173D;
+
+	--blue: #5286F1;
+	--blue-darken: #1751FF;
+	--blue-lighten: #6288FB;
+
+	--border-color-rgb: transparent;
+
+	--body-bg: #F9FAFC;
+	--footer-bg: #F9FAFC;
+	--header-bg: #F9FAFC;
+}

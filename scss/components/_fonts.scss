@@ -1,2 +1,73 @@
+// TODO: remove unused fonts
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
 // @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+
+// Theme 2
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap);
+
+// Theme 3
+@font-face{
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSans-300.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 300;
+}
+
+@font-face{
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSans-300.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSans-500.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSans-700.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+}
+
+
+@font-face{
+	font-family: 'Museo Slab';
+	src: url('../fonts/MuseoSlab-300.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 300;
+}
+
+@font-face{
+	font-family: 'Museo Slab';
+	src: url('../fonts/MuseoSlab-300.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Museo Slab';
+	src: url('../fonts/MuseoSlab-500.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: 'Museo Slab';
+	src: url('../fonts/MuseoSlab-700.woff2') format('woff2');
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+}

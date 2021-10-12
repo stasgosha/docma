@@ -1,11 +1,7 @@
 .related-products-section{
-	padding: 80px 0 120px;
-	background: $dark;
+	padding: 64px 0;
+	background: var(--dark);
 	color: #fff;
-
-	@media screen and (max-width: 575px){
-		padding: 64px 0;
-	}
 }
 
 .related-products-slider{
@@ -24,7 +20,7 @@
 
 	.card-image{
 		position: relative;
-		margin-bottom: 32px;
+		margin-bottom: 16px;
 		border-radius: 16px;
 		overflow: hidden;
 
@@ -43,16 +39,17 @@
 			display: block;
 			object-fit: cover;
 			object-position: center center;
-			transition: all $t;
+			transition: all var(--t);
 		}
 	}
 
 	.card-caption{
-		font-size: 24px;
+		font-size: 16px;
 		line-height: 1.666;
-		margin-bottom: 16px;
+		margin-bottom: 8px;
 		color: #fff;
 		font-weight: 600;
+		font-family: var(--second-font);
 	}
 
 	.card-price{

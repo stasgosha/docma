@@ -1,11 +1,11 @@
 .catalog-section{
-	padding: 96px 0 120px;
+	padding: 64px 0;
 
 	.section-inner{
 		display: grid;
 		align-items: start;
 		grid-template-columns: 220px 1fr;
-		grid-gap: 66px;
+		grid-gap: 64px;
 	}
 
 	.checkboxes-list{
@@ -22,20 +22,20 @@
 			}
 
 			.item-results-count{
-				font-size: 15px;
+				font-size: 14px;
 				line-height: 18px;
-				color: $text-color;
+				color: var(--text-color);
 			}
 		}
 	}
 
 	.section-sidebar{
 		display: grid;
-		grid-gap: 35px;
+		grid-gap: 24px;
 	}
 
 	.catalog-filters-block{
-		margin-bottom: 36px;
+		margin-bottom: 24px;
 	}
 
 	.catalog-loadmore{
@@ -79,7 +79,7 @@
 	}
 
 	.results-count{
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 1.5;
 		font-weight: 400;
 	}
@@ -93,7 +93,7 @@
 
 .sort-by-block{
 	display: flex;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 1.5;
 	font-weight: 400;
 	white-space: nowrap;
@@ -123,9 +123,9 @@
 			background: transparent;
 			appearance: none;
 			border: 0;
-			font-size: 15px;
+			font-size: 14px;
 			line-height: 1.5;
-			color: $text-dark;
+			color: var(--text-dark);
 			font-weight: 600;
 			cursor: pointer;
 			outline: none;
@@ -168,7 +168,7 @@
 
 .catalog-grid{
 	display: grid;
-	grid-gap: 32px 24px;
+	grid-gap: 24px;
 
 	@include product-card-visibility;
 }
@@ -177,6 +177,15 @@
 	padding: 35px 40px;
 	background: #fff;
 	border-radius: 8px;
+
+	.theme-2 &,
+	.theme-3 &{
+		box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+	}
+
+	.theme-2 .slick-slide &{
+		box-shadow: 0px 0px 12px rgba(176, 183, 195, 0.22);
+	}
 
 	.card-header{
 		margin-bottom: 24px;
@@ -198,26 +207,27 @@
 	.card-caption{
 		padding-bottom: 24px;
 		border-bottom: 4px solid rgba(#748FB5, .15);
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 1.2;
 		font-weight: 600;
-		color: $primary;
+		color: var(--primary);
+		font-family: var(--second-font);
 
 		a{
 			color: inherit;
 
 			&:hover,
 			&:focus{
-				color: lighten($primary, 10%);
+				color: var(--primary-lighten);
 			}
 		}
 	}
 
 	.card-info{
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 1.5;
 		font-weight: 600;
-		color: $primary;
+		color: var(--primary);
 		display: flex;
 
 		.info-item{
@@ -228,19 +238,19 @@
 	}
 
 	.card-more{
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 1.5;
 		font-weight: 600;
-		color: $primary;
+		color: var(--primary);
 
 		&:hover,
 		&:focus{
-			color: lighten($primary, 10%);
+			color: var(--primary-lighten);
 		}
 	}
 
 	.card-content{
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 1.5;
 		display: flex;
 		flex-direction: column;
@@ -252,6 +262,11 @@
 
 		.card-text{
 			width: 100%;
+
+			.theme-2 &,
+			.theme-3 &{
+				font-weight: 500;
+			}
 		}
 	}
 

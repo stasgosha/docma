@@ -14,7 +14,7 @@
 	--bar-width: 20px;
 	--bar-height: 2px;
 	--bar-fill: #3a3a3a;
-	--bar-fill-hover: #{ $primary };
+	--bar-fill-hover: #{ var(--primary) };
 	--bar-radius: 1px;
 
 	&:before{
@@ -33,7 +33,7 @@
 		height: var(--bar-height);
 		display: block;
 		margin-bottom: var(--gap);
-		transition: all $t;
+		transition: all var(--t);
 		width: var(--bar-width);
 		border-radius: var(--bar-radius);
 
@@ -45,7 +45,7 @@
 			position: relative;
 
 			&:before{
-				transition: transform $t, opacity $t;
+				transition: transform var(--t), opacity var(--t);
 				content: '';
 				display: block;
 				width: 100%;
