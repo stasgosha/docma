@@ -20,13 +20,26 @@
 	.header-inner{
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		width: calc(100% + 12px * 2);
 		margin-left: -12px;
 		margin-right: -12px;
 
 		.header-block{
 			padding: 0 12px;
+
+			&.header-auth{
+				margin-left: auto;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.header-auth{
+			.small-search-form{
+				margin-right: 16px;
+			}
 		}
 	}
 
@@ -38,6 +51,10 @@
 
 	@media screen and (max-width: 439px){
 		padding: 15px 0;
+
+		.header-inner{
+			justify-content: space-between;
+		}
 	}
 }
 
@@ -72,7 +89,7 @@
 			position: relative;
 
 			&:not(:last-child){
-				margin-right: 48px;
+				margin-right: 24px;
 			}
 
 			a{
@@ -86,6 +103,10 @@
 				&:focus{
 					color: var(--primary);
 				}
+			}
+
+			> a{
+				white-space: nowrap;
 			}
 
 			&.current-menu-item,
@@ -171,7 +192,7 @@
 		> ul{
 			> li{
 				&:not(:last-child){
-					margin-right: 25px;
+					margin-right: 16px;
 				}
 			}
 		}
@@ -311,7 +332,7 @@
 	}
 
 	@media screen and (max-width: 1199px){
-		--gap: 24px;
+		--gap: 16px;
 
 		.btn.btn-transparent{
 			padding-left: 0;
@@ -320,10 +341,66 @@
 	}
 
 	@media screen and (max-width: 439px){
-		--gap: 24px;
-
 		.btn{
 			width: calc(50% - 12px);
 		}
+	}
+}
+
+.small-search-form{
+	width: 100%;
+	max-width: 300px;
+	position: relative;
+
+	.search-field{
+		width: 100%;
+		display: block;
+		min-height: 50px;
+		border-radius: var(--r);
+		background: rgba(#748FB5, .06);
+		font-size: 16px;
+		padding: 0 48px 0 13px;
+		font-size: 16px;
+		appearance: none;
+		border: 0;
+		box-shadow: none;
+		transition: all var(--t);
+		font-family: inherit;
+
+		&::placeholder{
+			color: #64646C;
+			opacity: 1;
+		}
+
+		&:hover,
+		&:focus{
+			outline: none;
+		}
+	}
+
+	.search-button{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 16px;
+		color: #1F1D2B;
+		z-index: 2;
+
+		.btn-icon{
+			width: 16px;
+			height: 16px;
+			display: block;
+			fill: currentcolor;
+		}
+
+		&:hover,
+		&:focus{
+			color: var(--primary);
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		max-width: unset;
+		margin-bottom: 24px;
 	}
 }

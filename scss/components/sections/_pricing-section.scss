@@ -4,6 +4,46 @@
 	.section-caption{
 		margin-bottom: 32px;
 	}
+
+	.look-for-more{
+		margin-bottom: calc(-64px - 76px);
+		background: #1F242E;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 60px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 2;
+		margin-top: 80px;
+
+		.section-caption{
+			margin-bottom: 0;
+		}
+	}
+
+	&.with-bg{
+		background: var(--primary);
+		color: #fff;
+	}
+
+	@media screen and (max-width: 991px){
+		.look-for-more{
+			flex-direction: column;
+			text-align: center;
+
+			.section-caption{
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.look-for-more{
+			padding: 32px;
+		}
+	}
 }
 
 .quantity-select-block{
@@ -155,6 +195,28 @@
 			&:focus{
 				color: #fff;
 			}
+		}
+	}
+
+	.theme-2 &{
+		background: #fff;
+		box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+
+		.card-header{
+			border-bottom-color: #edeff5
+		}
+
+		.card-price{
+			color: var(--primary);
+		}
+
+		.card-caption,
+		.card-content-caption{
+			color: var(--text-dark);
+		}
+
+		.card-description{
+			color: var(--text-color);
 		}
 	}
 

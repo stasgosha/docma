@@ -2,6 +2,7 @@
 	.input-field{
 		position: relative;
 		padding: 1px;
+		border-radius: var(--r);
 
 		&:after{
 			content: '';
@@ -15,6 +16,14 @@
 			background: linear-gradient(180deg, #5A82F6 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(91.34deg, #2698EA 11.48%, #FFB176 53.97%, #ED5158 100.98%);
 			transition: all var(--t);
 			opacity: 0;
+		}
+
+		.theme-2 &{
+			background: #D2D6E5;
+
+			&:after{
+				background: var(--primary);
+			}
 		}
 
 		&:focus-within{
@@ -102,6 +111,14 @@
 			opacity: 0;
 		}
 
+		.theme-2 &{
+			background: #D2D6E5;
+
+			&:before{
+				background: var(--primary);
+			}
+		}
+
 		select{
 			background: transparent;
 			appearance: none;
@@ -154,7 +171,7 @@
 		font-size: 20px;
 		line-height: 1.6;
 		margin-bottom: 24px;
-		font-weight: 500;
+		font-weight: 600;
 		color: var(--text-dark);
 
 		&:not(:first-child){
@@ -214,6 +231,12 @@
 		margin-top: 32px;
 		padding-top: 32px;
 		border-top: 1px solid rgba(#A6A7A9, .4);
+
+		.theme-2 &{
+			border-top: 0;
+			padding-top: 0;
+			margin-top: 32px;
+		}
 	}
 }
 

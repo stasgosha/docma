@@ -32,6 +32,14 @@
 	.section-sidebar{
 		display: grid;
 		grid-gap: 24px;
+
+		.section-caption{
+			margin-bottom: 6px;
+			min-height: 50px;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.catalog-filters-block{
@@ -40,6 +48,15 @@
 
 	.catalog-loadmore{
 		margin-top: 60px;
+	}
+
+	.theme-2 &{
+		padding-top: 32px;
+
+		.search-form{
+			background: rgba(#748FB5, .06);
+			margin-bottom: 24px;
+		}
 	}
 
 	@media screen and (max-width: 991px){
@@ -54,7 +71,7 @@
 
 		.section-inner{
 			grid-template-columns: 1fr;
-			grid-gap: 48px;
+			grid-gap: 24px;
 		}
 	}
 }

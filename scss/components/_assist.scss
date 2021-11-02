@@ -6,12 +6,13 @@
 	.lg-visible-flex{ display: flex !important; }
 }
 
-.md-visible, .md-visible-flex{ display: none !important; }
+.md-visible, .md-visible-flex, .md-visible-grid{ display: none !important; }
 
 @media screen and (max-width: 991px){
 	.md-hidden{ display: none !important; }
 	.md-visible{ display: block !important; }
 	.md-visible-flex{ display: flex !important; }
+	.md-visible-grid{ display: grid !important; }
 }
 
 .sm-visible, .sm-visible-flex{ display: none !important; }

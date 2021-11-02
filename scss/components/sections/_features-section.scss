@@ -1,0 +1,117 @@
+.features-section{
+	padding-top: calc(64px + 76px);
+	padding-bottom: 64px;
+	background: rgba(#748FB5, .06);
+}
+
+.features-grid{
+	padding: 64px 32px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-template-columns: repeat(3, 276px);
+	grid-gap: 32px;
+	justify-content: space-between;
+
+	@media screen and (max-width: 1199px){
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		padding: 32px 24px;
+	}
+
+	@media screen and (max-width: 991px){
+		grid-gap: 16px;
+	}
+
+	@media screen and (max-width: 767px){
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
+	}
+}
+
+.feature-card{
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	color: var(--text-color);
+
+	.card-top{
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: 29px;
+		border-bottom: 1px solid #edeff5;
+	}
+
+	.card-price{
+		font-size: 26px;
+		line-height: 1.2;
+		margin-left: 16px;
+		color: var(--primary);
+		font-weight: 600;
+		font-family: var(--second-font);
+	}
+
+	.card-caption{
+		font-size: 16px;
+		text-transform: uppercase;
+		color: var(--text-dark);
+	}
+
+	.card-content{
+		padding: 16px 0;
+		flex: auto;
+	}
+
+	.card-content-caption{
+		font-size: 16px;
+		line-height: 2.5;
+		color: var(--text-dark);
+		margin-bottom: 8px;
+		font-weight: 400;
+	}
+
+	.card-features{
+		display: grid;
+		grid-gap: 13px;
+		font-size: 13px;
+		line-height: 1.538;
+		font-weight: 500;
+
+		li{
+			position: relative;
+			padding-left: 35px;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 25px;
+				height: 25px;
+				background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3E%3Cpath d='m19.64 7.14-9.82 9.82-4.46-4.46' stroke='%2300D764' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center center / contain;
+				position: absolute;
+				left: 0;
+				top: -2px;
+			}
+		}
+	}
+
+	.card-footer{
+		margin-top: 54px;
+
+		.btn{
+			width: 100%;
+			min-height: 50px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-weight: 500;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.card-footer{
+			margin-top: 32px;
+		}
+	}
+}
