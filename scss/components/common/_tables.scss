@@ -95,7 +95,7 @@
 		background: #fff;
 		padding: 24px;
 		z-index: 20;
-		box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+		box-shadow: var(--shadow);
 		border-radius: 4px;
 		transition: all var(--t);
 		transform: translateY(30px);

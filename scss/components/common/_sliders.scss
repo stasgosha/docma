@@ -61,7 +61,7 @@
 
 		.theme-2 &,
 		.theme-3 &{
-			box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+			box-shadow: var(--shadow);
 		}
 
 		svg{

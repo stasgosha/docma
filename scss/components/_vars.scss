@@ -18,7 +18,9 @@
 	--header-bg: #fff;
 	--t: .3s; // animation duration
 	--r: 8px; // default border radius
-	--shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+	// --shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+	--shadow: 0px 0px 8px rgb(176, 183, 195, 0.5);
+	// --shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 1px 0 0 rgba(0, 0, 0, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1), -1px 0 0 rgba(0, 0, 0, 0.1);
 
 	--text-color: #64646C;
 	--text-color-rgb: 110, 117, 124;

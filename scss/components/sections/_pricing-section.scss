@@ -200,7 +200,7 @@
 
 	.theme-2 &{
 		background: #fff;
-		box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+		box-shadow: var(--shadow);
 
 		.card-header{
 			border-bottom-color: #edeff5

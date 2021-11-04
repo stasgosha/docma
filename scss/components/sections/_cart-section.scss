@@ -59,7 +59,7 @@
 		.section-sidebar{
 			border-top: 0;
 			padding: 42px;
-			box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+			box-shadow: var(--shadow);
 			border-radius: 8px;
 			background: #fff;
 
@@ -78,7 +78,7 @@
 		.section-sidebar{
 			border-top: 0;
 			padding: 52px;
-			box-shadow: 8px 8px 24px rgba(176, 183, 195, 0.22);
+			box-shadow: var(--shadow);
 			border-radius: 8px;
 			background: #fff;
 
